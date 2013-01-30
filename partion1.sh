@@ -3,7 +3,7 @@ WORKING_DIR='/kb/dev_container/modules/docs/build'
 
 echo 'partitioning' $FILE 
 
-python $WORKING_DIR/khmer/scripts/load-graph.py -k 32 -N 4 -x 4e9 $FILE.part1 $FILE 
+python $WORKING_DIR/khmer/scripts/load-graph.py -k 32 -N 4 -x 1e6 $FILE.part1 $FILE 
 
 python $WORKING_DIR/khmer/scripts/partition-graph.py --threads 8 -s 1e5 $FILE.part1
 
