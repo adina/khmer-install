@@ -13,4 +13,7 @@ cd amos-3.1.0-rc1
 make 
 make install
 cp bin/* /usr/local/bin
+cd ..
 git clone git://github.com/dzerbino/velvet.git
+cd velvet
+make 'MAXKMERLENGTH=71'
